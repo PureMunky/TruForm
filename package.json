@@ -1,0 +1,29 @@
+{
+  "name": "truform",
+  "version": "1.0.0",
+  "description": "Website for Kevin Clark",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "uglify": "^0.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PureMunky/TruForm.git"
+  },
+  "author": "Phil Corbett (@PureMunky)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PureMunky/TruForm/issues"
+  },
+  "homepage": "https://github.com/PureMunky/TruForm#readme"
+}

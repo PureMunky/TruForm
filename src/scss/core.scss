@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#page {
+    width: 100%;
+}
+
+#pageHeader {
+    margin: 5px 10px;
+    font-weight: bold;
+    font-size: 22pt;
+}
+
+.heroSpace {
+    height: 280px;
+    width: 100%;
+    background: no-repeat center url(../img/heroSpace.jpg) #CCC;
+    background-size: cover;
+    vertical-align: middle;
+    padding-top: 180px;
+    
+    .innerFrame {
+        background: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        .innerText {
+            font-size: 18pt;
+            font-weight: bold;
+            line-height: 60px;
+        }
+    }
+}
+
+.content {
+    margin: 20px;
+    
+    p {
+        font-size: 14pt;
+    }
+    
+    span {
+        vertical-align: top;
+        display: inline-block;
+        text-align: justify;
+        margin: 2%;
+        width: 29%;
+        
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
