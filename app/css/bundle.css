@@ -1,113 +1,86 @@
-body {
-  margin: 0px;
-  box-sizing: border-box; }
-
-.flat {
-  font-family: Helvetica, Arial, sans-serif; }
-  .flat #page {
-    width: 100%; }
-  .flat #pageHeader {
-    margin: 5px 10px;
-    font-weight: bold;
-    font-size: 2em; }
-    .flat #pageHeader img {
-      margin-top: 10px;
-      float: right; }
-    .flat #pageHeader span {
-      font-size: .7em; }
-  .flat .heroSpace {
-    height: 280px;
-    width: 100%;
-    background: no-repeat center url(../img/heroSpace.jpg) #CCC;
-    background-size: cover;
-    vertical-align: middle;
-    padding-top: 180px; }
-    .flat .heroSpace .innerFrame {
-      background: rgba(255, 255, 255, 0.8);
-      text-align: center; }
-      .flat .heroSpace .innerFrame .innerText {
-        font-size: 2em;
-        font-weight: bold;
-        line-height: 60px; }
-  .flat .callOut {
-    color: #eee;
-    background-color: #227;
-    height: 200px; }
-    .flat .callOut div {
-      margin: auto;
-      width: 80%;
-      text-align: center; }
-      .flat .callOut div h2 {
-        margin: 2px; }
-      .flat .callOut div ul {
-        list-style: none;
-        display: inline; }
-  .flat .content {
-    margin: 20px; }
-    .flat .content p {
-      font-size: 1.2em;
-      line-height: 2em; }
-    .flat .content span {
-      vertical-align: top;
-      display: inline-block;
-      text-align: justify;
-      margin: 1%;
-      width: 29%;
-      line-height: 2em; }
-      .flat .content span img {
-        width: 100%;
-        margin-bottom: 10px; }
-
-.block {
+* {
+  box-sizing: border-box;
   font-family: Georgia, serif; }
-  .block #page {
-    width: 1000px;
-    margin: auto; }
-  .block #pageHeader {
+
+body {
+  margin: 0px; }
+
+#page {
+  width: 100%;
+  margin: auto; }
+
+.pageHeader {
+  margin: 10px;
+  height: auto;
+  font-weight: bold;
+  font-size: 3em;
+  color: #AA3322; }
+  .pageHeader ul {
+    list-style: none;
+    font-size: .25em;
+    float: right;
+    padding-top: 20px; }
+    .pageHeader ul li {
+      display: inline;
+      padding-right: 10px; }
+      .pageHeader ul li a {
+        color: #AA3322;
+        text-decoration: none; }
+      .pageHeader ul li a:hover {
+        background-color: #AA3322; }
+
+.banner {
+  margin: 1em;
+  padding: .5em;
+  float: right;
+  font-weight: bold;
+  font-size: 2em;
+  color: #E4B363;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .banner span {
+    display: block;
+    font-weight: normal;
+    font-size: .7em;
+    vertical-align: top; }
+
+.space {
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center; }
+  .space div {
     margin: 20px;
-    height: 40px;
-    font-weight: bold;
-    font-size: 3em;
-    color: #A32; }
-  .block .navigation {
-    background-color: #110;
-    padding: 1px; }
-    .block .navigation ul {
-      list-style: none; }
-      .block .navigation ul li {
-        display: inline;
-        margin-right: 2em; }
-        .block .navigation ul li a {
-          padding: 10px 20px;
-          background-color: #555;
-          border-right: 1px solid #fff;
-          color: #EEE;
-          text-decoration: none; }
-        .block .navigation ul li a:hover {
-          background-color: #A32; }
-  .block .banner {
-    padding: 1em;
-    font-weight: bold;
-    font-size: 2em;
-    background-color: #999; }
-    .block .banner img {
+    width: 300px;
+    display: inline-block; }
+    .space div img {
+      float: left;
       height: 132px;
       width: 132px; }
-    .block .banner span {
-      display: inline-block;
-      width: 166px;
+    .space div span {
       font-weight: normal;
-      font-size: 16px;
+      font-size: .7em;
       vertical-align: top; }
-  .block .space {
-    padding: 1em;
-    font-style: italic;
+
+.heroSpace {
+  height: 400px;
+  width: 100%;
+  background: no-repeat center url(../img/heroSpace.jpg) #CCC;
+  background-size: cover; }
+
+@media (max-width: 805px) {
+  .pageHeader {
+    margin: 5px;
+    font-size: 2em; }
+    .pageHeader ul {
+      font-size: .5em;
+      display: block;
+      float: none;
+      padding: 0px;
+      margin: auto;
+      text-align: center; }
+  .heroSpace {
+    text-align: center; }
+  .banner {
+    margin: 1em auto;
     font-size: 1.5em;
-    background-color: #A32; }
-  .block .heroSpace {
-    height: 280px;
     width: 100%;
-    background: no-repeat center url(../img/heroSpace.jpg) #CCC;
-    background-size: cover;
-    vertical-align: middle;
-    padding-top: 180px; }
+    margin: 2em 0; } }
