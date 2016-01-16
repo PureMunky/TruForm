@@ -3,57 +3,164 @@ body {
     box-sizing: border-box;
 }
 
-#page {
-    width: 100%;
-}
-
-#pageHeader {
-    margin: 5px 10px;
-    font-weight: bold;
-    font-size: 2em;
-    
-    img {
-        margin-top: 10px;
-        float: right;
-    }
-}
-
-.heroSpace {
-    height: 280px;
-    width: 100%;
-    background: no-repeat center url(../img/heroSpace.jpg) #CCC;
-    background-size: cover;
-    vertical-align: middle;
-    padding-top: 180px;
-    
-    .innerFrame {
-        background: rgba(255, 255, 255, 0.8);
-        text-align: center;
-        .innerText {
-            font-size: 2em;
-            font-weight: bold;
-            line-height: 60px;
-        }
-    }
-}
-
-.content {
-    margin: 20px;
-    
-    p {
-        font-size: 1.8em;
+.flat {
+    font-family: Helvetica, Arial, sans-serif;
+    #page {
+        width: 100%;
     }
     
-    span {
-        vertical-align: top;
-        display: inline-block;
-        text-align: justify;
-        margin: 1%;
-        width: 29%;
+    #pageHeader {
+        margin: 5px 10px;
+        font-weight: bold;
+        font-size: 2em;
         
         img {
-            width: 100%;
-            margin-bottom: 10px;
+            margin-top: 10px;
+            float: right;
         }
+        
+        span {
+            font-size: .7em;
+        }
+    }
+    
+    .heroSpace {
+        height: 280px;
+        width: 100%;
+        background: no-repeat center url(../img/heroSpace.jpg) #CCC;
+        background-size: cover;
+        vertical-align: middle;
+        padding-top: 180px;
+        
+        .innerFrame {
+            background: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            .innerText {
+                font-size: 2em;
+                font-weight: bold;
+                line-height: 60px;
+            }
+        }
+    }
+    
+    .callOut {
+        color: #eee;
+        background-color: #227;
+        height: 200px;
+        
+        div {
+            margin: auto;
+            width: 80%;
+            text-align: center;
+            
+            h2 {
+                margin: 2px;
+            }
+            
+            ul {
+                list-style: none;
+                display: inline;
+            }
+        }
+    }
+    
+    .content {
+        margin: 20px;
+        
+        p {
+            font-size: 1.2em;
+            line-height: 2em;
+        }
+        
+        span {
+            vertical-align: top;
+            display: inline-block;
+            text-align: justify;
+            margin: 1%;
+            width: 29%;
+            line-height: 2em;
+            
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.block {
+    font-family: Georgia, serif;
+    #page {
+        width: 1000px;
+        margin: auto;
+    }
+    
+    #pageHeader {
+        margin: 20px;
+        height: 40px;
+        font-weight: bold;
+        font-size: 3em;
+        color: #A32;
+    }
+    
+    .navigation {
+        background-color: #110;
+        padding: 1px;
+        
+        ul {
+            list-style: none;
+            
+            li {
+                display: inline;
+                margin-right: 2em;
+                a {
+                    padding: 10px 20px;
+                    background-color: #555;
+                    border-right: 1px solid #fff;
+                    color: #EEE;
+                    text-decoration: none;
+                }
+                
+                a:hover {
+                    background-color: #A32;
+                }
+            }
+        }
+    }
+    
+    .banner {
+        padding: 1em;
+        font-weight: bold;
+        font-size: 2em;
+        background-color: #999;
+        
+        img {
+            height: 132px;
+            width: 132px;
+        }
+        
+        span {
+            display: inline-block;
+            width: 166px;
+            font-weight: normal;
+            font-size: 16px;
+            vertical-align: top;
+        }
+    }
+    
+    .space {
+        padding: 1em;
+        font-style: italic;
+        font-size: 1.5em;
+        background-color: #A32;
+    }
+    
+    .heroSpace {
+        height: 280px;
+        width: 100%;
+        background: no-repeat center url(../img/heroSpace.jpg) #CCC;
+        background-size: cover;
+        vertical-align: middle;
+        padding-top: 180px;
     }
 }
